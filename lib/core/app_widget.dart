@@ -1,3 +1,5 @@
+import 'package:DevQuiz/home/home_page.dart';
+import 'package:DevQuiz/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -6,18 +8,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "DevQuiz",
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black87,
-          title: Text("DevQuiz"),
-        ),
-        body: Container(
-          color: Colors.black12,
-          child: Center(
-            child: Text("Conteúdo"),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
